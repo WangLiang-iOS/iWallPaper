@@ -7,7 +7,8 @@
 //
 
 #import "AppDelegate.h"
-
+#import "WPMainViewController.h"
+#import "WPCoreAgent.h"
 @interface AppDelegate ()
 
 @end
@@ -17,7 +18,12 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    NSLog(@"sunshiwen test");
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    WPMainViewController *mainViewController = [[WPMainViewController alloc] init];
+    self.window.rootViewController = mainViewController;
+    [self.window makeKeyAndVisible];
+    
+    [[WPCoreAgent sharedInstance] startWork];
     return YES;
 }
 

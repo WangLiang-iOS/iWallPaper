@@ -9,11 +9,30 @@
 /* Begin PBXBuildFile section */
 		352238B619F3CC2E008FEB96 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 352238B519F3CC2E008FEB96 /* main.m */; };
 		352238B919F3CC2E008FEB96 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 352238B819F3CC2E008FEB96 /* AppDelegate.m */; };
-		352238BC19F3CC2E008FEB96 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 352238BB19F3CC2E008FEB96 /* ViewController.m */; };
-		352238BF19F3CC2E008FEB96 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 352238BD19F3CC2E008FEB96 /* Main.storyboard */; };
 		352238C119F3CC2E008FEB96 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 352238C019F3CC2E008FEB96 /* Images.xcassets */; };
 		352238C419F3CC2E008FEB96 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 352238C219F3CC2E008FEB96 /* LaunchScreen.xib */; };
 		352238D019F3CC2E008FEB96 /* iWallPaperTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 352238CF19F3CC2E008FEB96 /* iWallPaperTests.m */; };
+		353E19EA19F6379100E04ED4 /* WPMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 353E19E919F6379000E04ED4 /* WPMainViewController.m */; };
+		353E1A0019F63A6D00E04ED4 /* WPBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 353E19FC19F63A6D00E04ED4 /* WPBaseViewController.m */; };
+		353E1A0319F63B7A00E04ED4 /* WPCoverModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 353E1A0219F63B7A00E04ED4 /* WPCoverModel.m */; };
+		353E1A0619F63B9B00E04ED4 /* WPPaperItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 353E1A0519F63B9B00E04ED4 /* WPPaperItem.m */; };
+		353E1A0D19F642BF00E04ED4 /* WPCoreAgent.m in Sources */ = {isa = PBXBuildFile; fileRef = 353E1A0C19F642BF00E04ED4 /* WPCoreAgent.m */; };
+		353E1A1119F6436F00E04ED4 /* WPPageContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 353E1A1019F6436F00E04ED4 /* WPPageContainer.m */; };
+		353E1A1719F6468D00E04ED4 /* WPPageIndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 353E1A1619F6468D00E04ED4 /* WPPageIndicatorView.m */; };
+		353E1A1A19F646A000E04ED4 /* WPPageTopBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 353E1A1919F646A000E04ED4 /* WPPageTopBar.m */; };
+		353E1A2019F65B8600E04ED4 /* WPHotestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 353E1A1F19F65B8600E04ED4 /* WPHotestViewController.m */; };
+		353E1A2319F65BAF00E04ED4 /* WPRandomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 353E1A2219F65BAF00E04ED4 /* WPRandomViewController.m */; };
+		353E1A2619F65BC800E04ED4 /* WPNewestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 353E1A2519F65BC800E04ED4 /* WPNewestViewController.m */; };
+		353E1A2A19F6603D00E04ED4 /* WPDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 353E1A2919F6603D00E04ED4 /* WPDevice.m */; };
+		353E1A4219F6655F00E04ED4 /* NSData+MKBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 353E1A3119F6655F00E04ED4 /* NSData+MKBase64.m */; };
+		353E1A4319F6655F00E04ED4 /* NSDate+RFC1123.m in Sources */ = {isa = PBXBuildFile; fileRef = 353E1A3319F6655F00E04ED4 /* NSDate+RFC1123.m */; };
+		353E1A4419F6655F00E04ED4 /* NSDictionary+RequestEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 353E1A3519F6655F00E04ED4 /* NSDictionary+RequestEncoding.m */; };
+		353E1A4519F6655F00E04ED4 /* NSString+MKNetworkKitAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 353E1A3719F6655F00E04ED4 /* NSString+MKNetworkKitAdditions.m */; };
+		353E1A4619F6655F00E04ED4 /* UIAlertView+MKNetworkKitAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 353E1A3919F6655F00E04ED4 /* UIAlertView+MKNetworkKitAdditions.m */; };
+		353E1A4719F6655F00E04ED4 /* MKNetworkEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 353E1A3B19F6655F00E04ED4 /* MKNetworkEngine.m */; };
+		353E1A4819F6655F00E04ED4 /* MKNetworkOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 353E1A3E19F6655F00E04ED4 /* MKNetworkOperation.m */; };
+		353E1A4919F6655F00E04ED4 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 353E1A4119F6655F00E04ED4 /* Reachability.m */; };
+		353E1A4C19F6664D00E04ED4 /* WPNetworkOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 353E1A4B19F6664D00E04ED4 /* WPNetworkOperation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,14 +51,56 @@
 		352238B519F3CC2E008FEB96 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		352238B719F3CC2E008FEB96 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		352238B819F3CC2E008FEB96 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		352238BA19F3CC2E008FEB96 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		352238BB19F3CC2E008FEB96 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		352238BE19F3CC2E008FEB96 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		352238C019F3CC2E008FEB96 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		352238C319F3CC2E008FEB96 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		352238C919F3CC2E008FEB96 /* iWallPaperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iWallPaperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		352238CE19F3CC2E008FEB96 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		352238CF19F3CC2E008FEB96 /* iWallPaperTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iWallPaperTests.m; sourceTree = "<group>"; };
+		353E19E819F6379000E04ED4 /* WPMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPMainViewController.h; sourceTree = "<group>"; };
+		353E19E919F6379000E04ED4 /* WPMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPMainViewController.m; sourceTree = "<group>"; };
+		353E19EB19F637DA00E04ED4 /* iWallPaper.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iWallPaper.pch; sourceTree = "<group>"; };
+		353E19EC19F6385200E04ED4 /* WPGlobalDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = WPGlobalDefine.h; path = iWallPaper/WPGlobalDefine.h; sourceTree = "<group>"; };
+		353E19FB19F63A6D00E04ED4 /* WPBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPBaseViewController.h; sourceTree = "<group>"; };
+		353E19FC19F63A6D00E04ED4 /* WPBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPBaseViewController.m; sourceTree = "<group>"; };
+		353E1A0119F63B7A00E04ED4 /* WPCoverModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPCoverModel.h; sourceTree = "<group>"; };
+		353E1A0219F63B7A00E04ED4 /* WPCoverModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPCoverModel.m; sourceTree = "<group>"; };
+		353E1A0419F63B9B00E04ED4 /* WPPaperItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPPaperItem.h; sourceTree = "<group>"; };
+		353E1A0519F63B9B00E04ED4 /* WPPaperItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPPaperItem.m; sourceTree = "<group>"; };
+		353E1A0B19F642BF00E04ED4 /* WPCoreAgent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPCoreAgent.h; sourceTree = "<group>"; };
+		353E1A0C19F642BF00E04ED4 /* WPCoreAgent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPCoreAgent.m; sourceTree = "<group>"; };
+		353E1A0F19F6436F00E04ED4 /* WPPageContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPPageContainer.h; sourceTree = "<group>"; };
+		353E1A1019F6436F00E04ED4 /* WPPageContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPPageContainer.m; sourceTree = "<group>"; };
+		353E1A1519F6468D00E04ED4 /* WPPageIndicatorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPPageIndicatorView.h; sourceTree = "<group>"; };
+		353E1A1619F6468D00E04ED4 /* WPPageIndicatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPPageIndicatorView.m; sourceTree = "<group>"; };
+		353E1A1819F646A000E04ED4 /* WPPageTopBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPPageTopBar.h; sourceTree = "<group>"; };
+		353E1A1919F646A000E04ED4 /* WPPageTopBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPPageTopBar.m; sourceTree = "<group>"; };
+		353E1A1E19F65B8600E04ED4 /* WPHotestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPHotestViewController.h; sourceTree = "<group>"; };
+		353E1A1F19F65B8600E04ED4 /* WPHotestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPHotestViewController.m; sourceTree = "<group>"; };
+		353E1A2119F65BAF00E04ED4 /* WPRandomViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPRandomViewController.h; sourceTree = "<group>"; };
+		353E1A2219F65BAF00E04ED4 /* WPRandomViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPRandomViewController.m; sourceTree = "<group>"; };
+		353E1A2419F65BC800E04ED4 /* WPNewestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPNewestViewController.h; sourceTree = "<group>"; };
+		353E1A2519F65BC800E04ED4 /* WPNewestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPNewestViewController.m; sourceTree = "<group>"; };
+		353E1A2819F6603D00E04ED4 /* WPDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPDevice.h; sourceTree = "<group>"; };
+		353E1A2919F6603D00E04ED4 /* WPDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPDevice.m; sourceTree = "<group>"; };
+		353E1A3019F6655F00E04ED4 /* NSData+MKBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+MKBase64.h"; sourceTree = "<group>"; };
+		353E1A3119F6655F00E04ED4 /* NSData+MKBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+MKBase64.m"; sourceTree = "<group>"; };
+		353E1A3219F6655F00E04ED4 /* NSDate+RFC1123.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+RFC1123.h"; sourceTree = "<group>"; };
+		353E1A3319F6655F00E04ED4 /* NSDate+RFC1123.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+RFC1123.m"; sourceTree = "<group>"; };
+		353E1A3419F6655F00E04ED4 /* NSDictionary+RequestEncoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+RequestEncoding.h"; sourceTree = "<group>"; };
+		353E1A3519F6655F00E04ED4 /* NSDictionary+RequestEncoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+RequestEncoding.m"; sourceTree = "<group>"; };
+		353E1A3619F6655F00E04ED4 /* NSString+MKNetworkKitAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MKNetworkKitAdditions.h"; sourceTree = "<group>"; };
+		353E1A3719F6655F00E04ED4 /* NSString+MKNetworkKitAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MKNetworkKitAdditions.m"; sourceTree = "<group>"; };
+		353E1A3819F6655F00E04ED4 /* UIAlertView+MKNetworkKitAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+MKNetworkKitAdditions.h"; sourceTree = "<group>"; };
+		353E1A3919F6655F00E04ED4 /* UIAlertView+MKNetworkKitAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+MKNetworkKitAdditions.m"; sourceTree = "<group>"; };
+		353E1A3A19F6655F00E04ED4 /* MKNetworkEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKNetworkEngine.h; sourceTree = "<group>"; };
+		353E1A3B19F6655F00E04ED4 /* MKNetworkEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKNetworkEngine.m; sourceTree = "<group>"; };
+		353E1A3C19F6655F00E04ED4 /* MKNetworkKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKNetworkKit.h; sourceTree = "<group>"; };
+		353E1A3D19F6655F00E04ED4 /* MKNetworkOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKNetworkOperation.h; sourceTree = "<group>"; };
+		353E1A3E19F6655F00E04ED4 /* MKNetworkOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKNetworkOperation.m; sourceTree = "<group>"; };
+		353E1A4019F6655F00E04ED4 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		353E1A4119F6655F00E04ED4 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		353E1A4A19F6664D00E04ED4 /* WPNetworkOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPNetworkOperation.h; sourceTree = "<group>"; };
+		353E1A4B19F6664D00E04ED4 /* WPNetworkOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPNetworkOperation.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +124,7 @@
 		352238A719F3CC2E008FEB96 = {
 			isa = PBXGroup;
 			children = (
+				353E19EC19F6385200E04ED4 /* WPGlobalDefine.h */,
 				352238B219F3CC2E008FEB96 /* iWallPaper */,
 				352238CC19F3CC2E008FEB96 /* iWallPaperTests */,
 				352238B119F3CC2E008FEB96 /* Products */,
@@ -81,11 +143,13 @@
 		352238B219F3CC2E008FEB96 /* iWallPaper */ = {
 			isa = PBXGroup;
 			children = (
+				353E1A0919F6429C00E04ED4 /* OpenSource */,
+				353E1A0A19F6429C00E04ED4 /* Utitlty */,
+				353E19F119F639B900E04ED4 /* Core */,
+				353E19F219F639B900E04ED4 /* Model */,
+				353E19E719F6375E00E04ED4 /* UI */,
 				352238B719F3CC2E008FEB96 /* AppDelegate.h */,
 				352238B819F3CC2E008FEB96 /* AppDelegate.m */,
-				352238BA19F3CC2E008FEB96 /* ViewController.h */,
-				352238BB19F3CC2E008FEB96 /* ViewController.m */,
-				352238BD19F3CC2E008FEB96 /* Main.storyboard */,
 				352238C019F3CC2E008FEB96 /* Images.xcassets */,
 				352238C219F3CC2E008FEB96 /* LaunchScreen.xib */,
 				352238B319F3CC2E008FEB96 /* Supporting Files */,
@@ -98,6 +162,7 @@
 			children = (
 				352238B419F3CC2E008FEB96 /* Info.plist */,
 				352238B519F3CC2E008FEB96 /* main.m */,
+				353E19EB19F637DA00E04ED4 /* iWallPaper.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -117,6 +182,140 @@
 				352238CE19F3CC2E008FEB96 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		353E19E719F6375E00E04ED4 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				353E19F319F63A6D00E04ED4 /* Common */,
+				353E19E819F6379000E04ED4 /* WPMainViewController.h */,
+				353E19E919F6379000E04ED4 /* WPMainViewController.m */,
+				353E1A1E19F65B8600E04ED4 /* WPHotestViewController.h */,
+				353E1A1F19F65B8600E04ED4 /* WPHotestViewController.m */,
+				353E1A2119F65BAF00E04ED4 /* WPRandomViewController.h */,
+				353E1A2219F65BAF00E04ED4 /* WPRandomViewController.m */,
+				353E1A2419F65BC800E04ED4 /* WPNewestViewController.h */,
+				353E1A2519F65BC800E04ED4 /* WPNewestViewController.m */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		353E19F119F639B900E04ED4 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				353E1A0719F6428800E04ED4 /* network */,
+				353E1A0819F6428800E04ED4 /* paser */,
+				353E1A0B19F642BF00E04ED4 /* WPCoreAgent.h */,
+				353E1A0C19F642BF00E04ED4 /* WPCoreAgent.m */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		353E19F219F639B900E04ED4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				353E1A0119F63B7A00E04ED4 /* WPCoverModel.h */,
+				353E1A0219F63B7A00E04ED4 /* WPCoverModel.m */,
+				353E1A0419F63B9B00E04ED4 /* WPPaperItem.h */,
+				353E1A0519F63B9B00E04ED4 /* WPPaperItem.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		353E19F319F63A6D00E04ED4 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				353E1A0E19F6435000E04ED4 /* PageContainer */,
+				353E19FB19F63A6D00E04ED4 /* WPBaseViewController.h */,
+				353E19FC19F63A6D00E04ED4 /* WPBaseViewController.m */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		353E1A0719F6428800E04ED4 /* network */ = {
+			isa = PBXGroup;
+			children = (
+				353E1A4A19F6664D00E04ED4 /* WPNetworkOperation.h */,
+				353E1A4B19F6664D00E04ED4 /* WPNetworkOperation.m */,
+			);
+			path = network;
+			sourceTree = "<group>";
+		};
+		353E1A0819F6428800E04ED4 /* paser */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = paser;
+			sourceTree = "<group>";
+		};
+		353E1A0919F6429C00E04ED4 /* OpenSource */ = {
+			isa = PBXGroup;
+			children = (
+				353E1A2E19F6655F00E04ED4 /* MKNetworkKit */,
+				353E1A3F19F6655F00E04ED4 /* Reachability */,
+			);
+			path = OpenSource;
+			sourceTree = "<group>";
+		};
+		353E1A0A19F6429C00E04ED4 /* Utitlty */ = {
+			isa = PBXGroup;
+			children = (
+				353E1A2819F6603D00E04ED4 /* WPDevice.h */,
+				353E1A2919F6603D00E04ED4 /* WPDevice.m */,
+			);
+			path = Utitlty;
+			sourceTree = "<group>";
+		};
+		353E1A0E19F6435000E04ED4 /* PageContainer */ = {
+			isa = PBXGroup;
+			children = (
+				353E1A0F19F6436F00E04ED4 /* WPPageContainer.h */,
+				353E1A1019F6436F00E04ED4 /* WPPageContainer.m */,
+				353E1A1519F6468D00E04ED4 /* WPPageIndicatorView.h */,
+				353E1A1619F6468D00E04ED4 /* WPPageIndicatorView.m */,
+				353E1A1819F646A000E04ED4 /* WPPageTopBar.h */,
+				353E1A1919F646A000E04ED4 /* WPPageTopBar.m */,
+			);
+			path = PageContainer;
+			sourceTree = "<group>";
+		};
+		353E1A2E19F6655F00E04ED4 /* MKNetworkKit */ = {
+			isa = PBXGroup;
+			children = (
+				353E1A2F19F6655F00E04ED4 /* Categories */,
+				353E1A3A19F6655F00E04ED4 /* MKNetworkEngine.h */,
+				353E1A3B19F6655F00E04ED4 /* MKNetworkEngine.m */,
+				353E1A3C19F6655F00E04ED4 /* MKNetworkKit.h */,
+				353E1A3D19F6655F00E04ED4 /* MKNetworkOperation.h */,
+				353E1A3E19F6655F00E04ED4 /* MKNetworkOperation.m */,
+			);
+			path = MKNetworkKit;
+			sourceTree = "<group>";
+		};
+		353E1A2F19F6655F00E04ED4 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				353E1A3019F6655F00E04ED4 /* NSData+MKBase64.h */,
+				353E1A3119F6655F00E04ED4 /* NSData+MKBase64.m */,
+				353E1A3219F6655F00E04ED4 /* NSDate+RFC1123.h */,
+				353E1A3319F6655F00E04ED4 /* NSDate+RFC1123.m */,
+				353E1A3419F6655F00E04ED4 /* NSDictionary+RequestEncoding.h */,
+				353E1A3519F6655F00E04ED4 /* NSDictionary+RequestEncoding.m */,
+				353E1A3619F6655F00E04ED4 /* NSString+MKNetworkKitAdditions.h */,
+				353E1A3719F6655F00E04ED4 /* NSString+MKNetworkKitAdditions.m */,
+				353E1A3819F6655F00E04ED4 /* UIAlertView+MKNetworkKitAdditions.h */,
+				353E1A3919F6655F00E04ED4 /* UIAlertView+MKNetworkKitAdditions.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		353E1A3F19F6655F00E04ED4 /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				353E1A4019F6655F00E04ED4 /* Reachability.h */,
+				353E1A4119F6655F00E04ED4 /* Reachability.m */,
+			);
+			path = Reachability;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -163,6 +362,7 @@
 		352238A819F3CC2E008FEB96 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = WP;
 				LastUpgradeCheck = 0600;
 				ORGANIZATIONNAME = Noname;
 				TargetAttributes = {
@@ -199,7 +399,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				352238BF19F3CC2E008FEB96 /* Main.storyboard in Resources */,
 				352238C419F3CC2E008FEB96 /* LaunchScreen.xib in Resources */,
 				352238C119F3CC2E008FEB96 /* Images.xcassets in Resources */,
 			);
@@ -219,9 +418,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				352238BC19F3CC2E008FEB96 /* ViewController.m in Sources */,
+				353E1A4519F6655F00E04ED4 /* NSString+MKNetworkKitAdditions.m in Sources */,
+				353E1A2619F65BC800E04ED4 /* WPNewestViewController.m in Sources */,
+				353E19EA19F6379100E04ED4 /* WPMainViewController.m in Sources */,
+				353E1A4819F6655F00E04ED4 /* MKNetworkOperation.m in Sources */,
+				353E1A4C19F6664D00E04ED4 /* WPNetworkOperation.m in Sources */,
+				353E1A4219F6655F00E04ED4 /* NSData+MKBase64.m in Sources */,
+				353E1A0D19F642BF00E04ED4 /* WPCoreAgent.m in Sources */,
 				352238B919F3CC2E008FEB96 /* AppDelegate.m in Sources */,
+				353E1A1A19F646A000E04ED4 /* WPPageTopBar.m in Sources */,
+				353E1A1119F6436F00E04ED4 /* WPPageContainer.m in Sources */,
+				353E1A4319F6655F00E04ED4 /* NSDate+RFC1123.m in Sources */,
+				353E1A1719F6468D00E04ED4 /* WPPageIndicatorView.m in Sources */,
+				353E1A2319F65BAF00E04ED4 /* WPRandomViewController.m in Sources */,
+				353E1A4619F6655F00E04ED4 /* UIAlertView+MKNetworkKitAdditions.m in Sources */,
+				353E1A4419F6655F00E04ED4 /* NSDictionary+RequestEncoding.m in Sources */,
+				353E1A4919F6655F00E04ED4 /* Reachability.m in Sources */,
+				353E1A2A19F6603D00E04ED4 /* WPDevice.m in Sources */,
 				352238B619F3CC2E008FEB96 /* main.m in Sources */,
+				353E1A0319F63B7A00E04ED4 /* WPCoverModel.m in Sources */,
+				353E1A4719F6655F00E04ED4 /* MKNetworkEngine.m in Sources */,
+				353E1A0619F63B9B00E04ED4 /* WPPaperItem.m in Sources */,
+				353E1A0019F63A6D00E04ED4 /* WPBaseViewController.m in Sources */,
+				353E1A2019F65B8600E04ED4 /* WPHotestViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,14 +463,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		352238BD19F3CC2E008FEB96 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				352238BE19F3CC2E008FEB96 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		352238C219F3CC2E008FEB96 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -345,7 +556,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
+				GCC_PREFIX_HEADER = iWallPaper/iWallPaper.pch;
+				IBSC_FLATTEN_NIBS = YES;
 				INFOPLIST_FILE = iWallPaper/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -355,7 +570,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
+				GCC_PREFIX_HEADER = iWallPaper/iWallPaper.pch;
+				IBSC_FLATTEN_NIBS = YES;
 				INFOPLIST_FILE = iWallPaper/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -414,6 +633,7 @@
 				352238D519F3CC2E008FEB96 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		352238D619F3CC2E008FEB96 /* Build configuration list for PBXNativeTarget "iWallPaperTests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +642,7 @@
 				352238D819F3CC2E008FEB96 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
