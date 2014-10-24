@@ -6,8 +6,8 @@
 //  Copyright (c) 2014年 Noname. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "WPBaseViewController.h"
 
-@interface WPNewestViewController : UIViewController
+@interface WPNewestViewController : WPBaseViewController
 
 @end
