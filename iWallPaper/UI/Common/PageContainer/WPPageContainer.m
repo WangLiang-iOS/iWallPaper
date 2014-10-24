@@ -10,7 +10,7 @@
 #import "WPPageTopBar.h"
 #import "WPPageIndicatorView.h"
 #define PHONE_STATUSBAR_HEIGHT  20.f
-#define TABBAR_HEIGHT_IPHONE 49
+//#define TABBAR_HEIGHT_IPHONE 49
 
 @interface WPPageContainer ()<UIScrollViewDelegate,WPPageTopBarDelelgate>
 @property (strong, nonatomic) WPPageTopBar *topBar;
@@ -56,7 +56,7 @@
 {
     [super viewDidLoad];
     self.shouldObserveContentOffset = YES;
-    self.scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0.,self.topBarHeight+PHONE_STATUSBAR_HEIGHT,self.view.bounds.size.width,self.view.bounds.size.height - self.topBarHeight-TABBAR_HEIGHT_IPHONE-PHONE_STATUSBAR_HEIGHT)];
+    self.scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0.,self.topBarHeight+PHONE_STATUSBAR_HEIGHT,self.view.bounds.size.width,self.view.bounds.size.height - self.topBarHeight-PHONE_STATUSBAR_HEIGHT)];
     self.scrollView.autoresizingMask = UIViewAutoresizingNone;
     self.scrollView.delegate = self;
     self.scrollView.pagingEnabled = YES;
@@ -242,7 +242,7 @@
 
 - (CGFloat)scrollHeight
 {
-    return self.view.frame.size.height - self.topBarHeight-TABBAR_HEIGHT_IPHONE-PHONE_STATUSBAR_HEIGHT;
+    return self.view.frame.size.height - self.topBarHeight-PHONE_STATUSBAR_HEIGHT;
 }
 
 - (CGFloat)scrollWidth

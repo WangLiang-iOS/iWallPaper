@@ -12,6 +12,7 @@
 		352238C119F3CC2E008FEB96 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 352238C019F3CC2E008FEB96 /* Images.xcassets */; };
 		352238C419F3CC2E008FEB96 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 352238C219F3CC2E008FEB96 /* LaunchScreen.xib */; };
 		352238D019F3CC2E008FEB96 /* iWallPaperTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 352238CF19F3CC2E008FEB96 /* iWallPaperTests.m */; };
+		352A822D19F8ADF2008453E2 /* WPTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 352A822C19F8ADF2008453E2 /* WPTableViewController.m */; };
 		353E19EA19F6379100E04ED4 /* WPMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 353E19E919F6379000E04ED4 /* WPMainViewController.m */; };
 		353E1A0019F63A6D00E04ED4 /* WPBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 353E19FC19F63A6D00E04ED4 /* WPBaseViewController.m */; };
 		353E1A0319F63B7A00E04ED4 /* WPCoverModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 353E1A0219F63B7A00E04ED4 /* WPCoverModel.m */; };
@@ -56,6 +57,8 @@
 		352238C919F3CC2E008FEB96 /* iWallPaperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iWallPaperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		352238CE19F3CC2E008FEB96 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		352238CF19F3CC2E008FEB96 /* iWallPaperTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iWallPaperTests.m; sourceTree = "<group>"; };
+		352A822B19F8ADF2008453E2 /* WPTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPTableViewController.h; sourceTree = "<group>"; };
+		352A822C19F8ADF2008453E2 /* WPTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPTableViewController.m; sourceTree = "<group>"; };
 		353E19E819F6379000E04ED4 /* WPMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPMainViewController.h; sourceTree = "<group>"; };
 		353E19E919F6379000E04ED4 /* WPMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPMainViewController.m; sourceTree = "<group>"; };
 		353E19EB19F637DA00E04ED4 /* iWallPaper.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iWallPaper.pch; sourceTree = "<group>"; };
@@ -228,6 +231,8 @@
 				353E1A0E19F6435000E04ED4 /* PageContainer */,
 				353E19FB19F63A6D00E04ED4 /* WPBaseViewController.h */,
 				353E19FC19F63A6D00E04ED4 /* WPBaseViewController.m */,
+				352A822B19F8ADF2008453E2 /* WPTableViewController.h */,
+				352A822C19F8ADF2008453E2 /* WPTableViewController.m */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -418,6 +423,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				352A822D19F8ADF2008453E2 /* WPTableViewController.m in Sources */,
 				353E1A4519F6655F00E04ED4 /* NSString+MKNetworkKitAdditions.m in Sources */,
 				353E1A2619F65BC800E04ED4 /* WPNewestViewController.m in Sources */,
 				353E19EA19F6379100E04ED4 /* WPMainViewController.m in Sources */,
@@ -556,6 +562,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
 				GCC_PREFIX_HEADER = iWallPaper/iWallPaper.pch;
 				IBSC_FLATTEN_NIBS = YES;
@@ -563,6 +570,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "460602ab-1de4-411f-a557-43991005e26d";
 			};
 			name = Debug;
 		};
@@ -577,6 +585,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "460602ab-1de4-411f-a557-43991005e26d";
 			};
 			name = Release;
 		};

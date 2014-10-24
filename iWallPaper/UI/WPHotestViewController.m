@@ -7,6 +7,11 @@
 //
 
 #import "WPHotestViewController.h"
+#import "WPTableViewController.h"
+
+@interface WPHotestViewController ()
+@property(nonatomic,strong)WPTableViewController *listView;
+@end
 
 @implementation WPHotestViewController
 
