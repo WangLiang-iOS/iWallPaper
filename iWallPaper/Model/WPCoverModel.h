@@ -14,5 +14,6 @@
 @property(nonatomic,strong)NSString *title;
 @property(nonatomic,strong)NSString *coverUrl;
 @property(nonatomic,strong)UIImage *coverImage;
+@property(nonatomic,strong)NSString *contentUrl; //used for getting all pictures url of this cover
 @property(nonatomic,strong)NSArray *paperItems; //WPPaperItem objects
 @end
