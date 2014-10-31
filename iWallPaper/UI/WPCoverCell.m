@@ -59,12 +59,14 @@
             [self.itemViews addObject:itemView];
         }
 //        itemView.title = cover.title;
+        itemView.image = nil;
         if (cover.coverImage) {
             itemView.image = cover.coverImage;
         }else{
             [[WPCoreAgent sharedInstance] getCoverImage:cover completion:^(UIImage *image,NSError *error){
                 if (image && !error) {
                     itemView.image = image;
+                    NSLog(@"%f,%f",image.size.width,image.size.height);
                 }
             }];
         }

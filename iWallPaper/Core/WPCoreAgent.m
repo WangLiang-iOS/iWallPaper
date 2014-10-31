@@ -35,6 +35,7 @@
 
 -(void)getCoversWithType:(WPCoverType)coverType index:(int)index completion:(WPGetCoversCompletionBlock)completionBlock{
     NSString *coverUrl = [self _coverUrlWithType:coverType index:index];
+    NSLog(@"%@",coverUrl);
     [self.httpTransfer downloadRequest:coverUrl onSuccessed:^(NSString *url,NSData *responeData){
         if ([responeData length] > 0) {
             NSArray *covers = [WPParser getAllCovers:responeData];

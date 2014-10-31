@@ -74,7 +74,7 @@
 #pragma mark -
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    return 150.f;
+    return 300.f;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
@@ -148,6 +148,9 @@
             if (!error && type == wself.coverType) {
                 if (wself.pageIndex == 1) {
                     [wself.allCovers removeAllObjects];
+                    [wself.coverTableView.pullToRefreshView stopAnimating];
+                }else{
+                    [wself.coverTableView.infiniteScrollingView stopAnimating];
                 }
                 wself.pageIndex += 1;
                 if (wself.pageIndex > kDownloadMaxPages) {
@@ -160,7 +163,6 @@
                 }
             }
             
-            [wself.coverTableView.pullToRefreshView stopAnimating];
         }];
     }
 }

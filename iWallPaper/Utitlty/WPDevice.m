@@ -12,23 +12,32 @@
 #include <sys/mount.h>
 
 @implementation UIDevice (Ext)
+
+static Device_type sDeviceType = Device_Unkown;
 +(Device_type) deviceType
 {
-    struct utsname systemInfo;
-    uname(&systemInfo);
-    NSString *deviceString = [NSString stringWithCString:systemInfo.machine encoding:NSUTF8StringEncoding];
-    Device_type type = Device_Unkown;
-    if ([deviceString isEqualToString:@"iPhone4,1"] ||
-        [deviceString isEqualToString:@"iPhone3,1"])
-        type = IPhone4;
-    else if ([deviceString isEqualToString:@"iPhone5,2"] ||
-             [deviceString isEqualToString:@"iPod5,1"])
-        type = IPhone5;
-    else if ([deviceString isEqualToString:@"iPhone6,1"])
-        type = IPhone6;
-    else if ([deviceString isEqualToString:@"iPhone7,1"])
-        type = IPhone6p;
-
-    return type;
+    @synchronized(self) {
+        if(sDeviceType == Device_Unkown) {
+            Device_type type = Device_Unkown;
+            struct utsname systemInfo;
+            uname(&systemInfo);
+            NSString *deviceString = [NSString stringWithCString:systemInfo.machine encoding:NSUTF8StringEncoding];
+            if ([deviceString isEqualToString:@"iPhone3,1"] ||
+                [deviceString isEqualToString:@"iPhone4,1"]){
+                type = IPhone4;
+            }else if ([deviceString isEqualToString:@"iPod5,1"] ||
+                       [deviceString isEqualToString:@"iPhone5,2"] ||
+                       [deviceString isEqualToString:@"iPhone5,4"] ||
+                       [deviceString isEqualToString:@"iPhone6,2"]) {
+                type = IPhone5;
+            } else if ([deviceString isEqualToString:@"iPhone7,1"]) {
+                type = IPhone6p;
+            } else if ([deviceString isEqualToString:@"iPhone7,2"]) {
+                type = IPhone6;
+            }
+            sDeviceType = type;
+        }
+    }
+    return sDeviceType;
 }
 @end
