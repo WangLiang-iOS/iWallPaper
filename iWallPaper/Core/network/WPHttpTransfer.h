@@ -1,5 +1,5 @@
 //
-//  WPNetworkOperation.h
+//  WPHttpTransfer.h
 //  iWallPaper
 //
 //  Created by wangliang-ms on 14/10/21.
@@ -8,14 +8,14 @@
 
 #import <Foundation/Foundation.h>
 
-typedef void (^WPDataSuccessedBlock) (NSString *Identifer,NSString *url,NSData *data);
-typedef void (^WPDataFailedBlock) (NSString *Identifer,NSString *url,NSError *error);
+typedef void (^WPRequestSuccessedBlock) (NSString *url,NSData *responseData);
+typedef void (^WPRequestFailedBlock) (NSString *url,NSError *error);
 typedef void (^WPProgressBlock) (double progress);
 
-@interface WPNetworkOperation : NSObject
+@interface WPHttpTransfer : NSObject
 -(NSString *) downloadRequest:(NSString *) url
-                  onSuccessed:(WPDataSuccessedBlock) successedBlock
-                     onFailed:(WPDataFailedBlock) failedBlock
+                  onSuccessed:(WPRequestSuccessedBlock) successedBlock
+                     onFailed:(WPRequestFailedBlock) failedBlock
                      progress:(WPProgressBlock) pgBlock;
 -(void) cancelAll;
 -(void) cancelIdentity:(NSString *) identity;

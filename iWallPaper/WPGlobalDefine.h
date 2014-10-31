@@ -16,6 +16,9 @@
 #define kDownloadHostUrl @"http://sj.zol.com.cn"
 
 #define kDownloadMaxPages 30
+#define kCoverCellHeight 50.f
+#define kTopBarHeight 44.f
+#define PHONE_STATUSBAR_HEIGHT  20.f
 
 #define WPColor(r,g,b) WPColorA(r,g,b,1.f)
 #define WPColorA(r,g,b,a) [UIColor colorWithRed:r/255.f green:g/255.f blue:b/255.f alpha:a]

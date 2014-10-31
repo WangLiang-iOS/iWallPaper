@@ -19,11 +19,13 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    
     WPMainViewController *mainViewController = [[WPMainViewController alloc] init];
-    self.window.rootViewController = mainViewController;
+    self.rootNavigation = [[UINavigationController alloc] initWithRootViewController:mainViewController];
+    self.rootNavigation.interactivePopGestureRecognizer.enabled = YES;
+    self.window.rootViewController = self.rootNavigation;
     [self.window makeKeyAndVisible];
     
-    [[WPCoreAgent sharedInstance] startWork];
     return YES;
 }
 

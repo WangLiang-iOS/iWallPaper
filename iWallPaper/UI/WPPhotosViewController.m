@@ -1,22 +1,28 @@
 //
-//  WPTableViewController.m
+//  WPPhotosViewController.m
 //  iWallPaper
 //
-//  Created by wangliang-ms on 14/10/23.
+//  Created by wangliang-ms on 14/10/30.
 //  Copyright (c) 2014年 Noname. All rights reserved.
 //
 
-#import "WPTableViewController.h"
+#import "WPPhotosViewController.h"
 
-@interface WPTableViewController ()
+@interface WPPhotosViewController ()
 
 @end
 
-@implementation WPTableViewController
+@implementation WPPhotosViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.title = self.coverTitle;
+}
+
+- (void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    [self.navigationController setNavigationBarHidden:NO];
 }
 
 - (void)didReceiveMemoryWarning {

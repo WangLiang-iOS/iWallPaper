@@ -8,9 +8,7 @@
 
 #import "WPMainViewController.h"
 #import "WPPageContainer.h"
-#import "WPHotestViewController.h"
-#import "WPNewestViewController.h"
-#import "WPRandomViewController.h"
+#import "WPCoverViewController.h"
 
 @interface WPMainViewController ()
 @property(nonatomic,strong)WPPageContainer *pageContainer;
@@ -30,19 +28,26 @@
     [self.pageContainer didMoveToParentViewController:self];
     [self.view addSubview:self.pageContainer.view];
     
-    WPNewestViewController *newestVC = [[WPNewestViewController alloc] init];
+
+    WPCoverViewController *newestVC = [[WPCoverViewController alloc] initWithCoverType:CoverType_Newest];
     newestVC.title = @"最新";
-    WPHotestViewController *hotestVC = [[WPHotestViewController alloc] init];
+    WPCoverViewController *hotestVC = [[WPCoverViewController alloc] initWithCoverType:CoverType_Hotest];
     hotestVC.title = @"最热";
-    WPRandomViewController *randomVC = [[WPRandomViewController alloc] init];
+    WPCoverViewController *randomVC = [[WPCoverViewController alloc] initWithCoverType:CoverType_Random];
     randomVC.title = @"随机";
     self.pageContainer.viewControllers = @[newestVC,hotestVC,randomVC];
+
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.view.backgroundColor = WPColor(0xf7, 0xf7, 0xf7);
+}
+
+- (void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    [self.navigationController setNavigationBarHidden:YES];
 }
 
 - (void)didReceiveMemoryWarning {

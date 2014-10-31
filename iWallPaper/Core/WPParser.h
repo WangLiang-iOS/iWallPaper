@@ -10,7 +10,7 @@
 
 @interface WPParser : NSObject
 //得到一页壁纸的信息,一页有15张专辑
-+ (NSMutableArray *)getAllCovers:(NSString *)htmlString;
++ (NSArray *)getAllCovers:(NSData *)htmlData;
 //得到指定壁纸的所有图片
-+ (NSMutableArray *)getAllPictures:(NSString *)htmlString;
++ (NSArray *)getAllPictures:(NSData *)htmlData;
 @end

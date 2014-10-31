@@ -7,13 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "WPCoreAgent.h"
-#import "WPParser.h"
-#import "WPCoverModel.h"
-#import "WPPaperItem.h"
+
 @interface WPBaseViewController : UIViewController
-@property (strong, nonatomic) NSMutableArray *allCovers;
-@property (assign, nonatomic) NSUInteger pageIndex;
-@property BOOL isLoading;
-@property BOOL isLastPage;
+
 @end

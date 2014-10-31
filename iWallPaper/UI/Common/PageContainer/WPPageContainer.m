@@ -9,7 +9,6 @@
 #import "WPPageContainer.h"
 #import "WPPageTopBar.h"
 #import "WPPageIndicatorView.h"
-#define PHONE_STATUSBAR_HEIGHT  20.f
 //#define TABBAR_HEIGHT_IPHONE 49
 
 @interface WPPageContainer ()<UIScrollViewDelegate,WPPageTopBarDelelgate>
@@ -46,7 +45,7 @@
 // default
 - (void)setUp
 {
-    _topBarHeight = 44.;
+    _topBarHeight = kTopBarHeight;
     _topBarBackgroundColor = [UIColor colorWithWhite:0.9 alpha:1.];
     _topBarItemLabelsFont = [UIFont systemFontOfSize:12];
     _pageIndicatorViewSize = CGSizeMake(17., 2.);

@@ -13,10 +13,6 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.allCovers = [[NSMutableArray alloc] init];
-    self.pageIndex = 1;
-    self.isLoading = NO;
-    self.isLastPage = NO;
 }
 
 @end

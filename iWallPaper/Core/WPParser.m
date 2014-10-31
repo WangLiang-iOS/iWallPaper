@@ -11,15 +11,10 @@
 #import "WPCoverModel.h"
 #import "WPDevice.h"
 @implementation WPParser
-+ (NSMutableArray *)getAllCovers:(NSString *)htmlString{
-    if (htmlString == nil){
++ (NSArray *)getAllCovers:(NSData *)htmlData{
+    if ([htmlData length] == 0){
         return nil;
     } else{
-        //gbk编码解析
-        NSStringEncoding gbkEncoding = CFStringConvertEncodingToNSStringEncoding(kCFStringEncodingGB_18030_2000);
-        //        NSData *htmlData = [response dataUsingEncoding:NSUTF8StringEncoding];
-        
-        NSData *htmlData = [htmlString dataUsingEncoding:gbkEncoding];
         TFHpple *xpathParser = [[TFHpple alloc] initWithHTMLData:htmlData];
         NSArray *elements  = [xpathParser searchWithXPathQuery:@"/html/body/div[5]/div[1]/ul[1]//li/a"];
         NSMutableArray *array = [[NSMutableArray alloc] init];
@@ -41,19 +36,13 @@
         return array;
     }
 }
-+ (NSMutableArray *)getAllPictures:(NSString *)htmlString{
-    if (htmlString == nil){
++ (NSArray *)getAllPictures:(NSData *)htmlData{
+    if ([htmlData length] == 0){
         return nil;
-    } else{
-        //gbk编码解析
-        NSStringEncoding gbkEncoding = CFStringConvertEncodingToNSStringEncoding(kCFStringEncodingGB_18030_2000);
-        //        NSData *htmlData = [response dataUsingEncoding:NSUTF8StringEncoding];
-        
-        NSData *htmlData = [htmlString dataUsingEncoding:gbkEncoding];
+    }  else{
         TFHpple *xpathParser = [[TFHpple alloc] initWithHTMLData:htmlData];
         NSArray *elements  = [xpathParser searchWithXPathQuery:@"//*[@id=\"showImg\"]//li/a/img"];
         NSMutableArray *array = [[NSMutableArray alloc] init];
-        NSLog(@"count = %d",[elements count]);
         Device_type d_type = [UIDevice deviceType];
         NSString *currentSize = nil;
         switch (d_type) {
