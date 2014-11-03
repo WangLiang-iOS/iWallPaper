@@ -11,6 +11,7 @@
 #import "WPPhotosViewController.h"
 #import "AppDelegate.h"
 #import "SVPullToRefresh.h"
+#import "MBProgressHUD.h"
 
 @interface WPCoverViewController ()<UITableViewDataSource,UITableViewDelegate,WPCoverCellDelegate>
 @property(nonatomic,strong)NSMutableArray *allCovers;
@@ -60,6 +61,7 @@
 
 - (void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
+    [self.navigationController setNavigationBarHidden:YES];
 }
 
 - (void)viewDidDisappear:(BOOL)animated{
@@ -99,8 +101,10 @@
         return;
     }
     self.isPushing = YES;
+    
     WPPhotosViewController *photosVC = [[WPPhotosViewController alloc] init];
     photosVC.coverTitle = cover.title;
+    photosVC.photos = cover.paperItems;
     [((AppDelegate*)[UIApplication sharedApplication].delegate).rootNavigation pushViewController:photosVC animated:YES];
 }
 #pragma mark - private methods
@@ -143,8 +147,13 @@
     if (self.pageIndex > 0) {
         self.isLoading = YES;
         __weak typeof(self) wself = self;
+        MBProgressHUD *hud = [[MBProgressHUD alloc] initWithView:self.view];
+        hud.labelText = @"Downloading...";
+        [self.view addSubview:hud];
+        [hud show:YES];
         [[WPCoreAgent sharedInstance] getCoversWithType:self.coverType index:self.pageIndex completion:^(NSArray *covers,NSError *error,WPCoverType type){
             wself.isLoading = NO;
+            [hud hide:YES];
             if (!error && type == wself.coverType) {
                 if (wself.pageIndex == 1) {
                     [wself.allCovers removeAllObjects];

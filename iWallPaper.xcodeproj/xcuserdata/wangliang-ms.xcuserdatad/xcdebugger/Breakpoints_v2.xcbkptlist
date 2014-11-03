@@ -25,13 +25,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "iWallPaper/UI/WPCoverViewController.m"
-            timestampString = "436432220.519461"
+            filePath = "iWallPaper/OpenSource/MWPhotoBrowser/MWPhoto.m"
+            timestampString = "436697650.149929"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "136"
-            endingLineNumber = "136"
-            landmarkName = "-_loadMoreData"
+            startingLineNumber = "208"
+            endingLineNumber = "208"
+            landmarkName = "-postCompleteNotification"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -42,27 +42,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "iWallPaper/UI/WPCoverViewController.m"
-            timestampString = "436432220.519461"
+            timestampString = "436701218.511237"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "148"
-            endingLineNumber = "148"
-            landmarkName = "-_loadData"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "iWallPaper/UI/WPCoverViewController.m"
-            timestampString = "436432155.793074"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "56"
-            endingLineNumber = "56"
+            startingLineNumber = "57"
+            endingLineNumber = "57"
             landmarkName = "-viewDidLoad"
             landmarkType = "5">
          </BreakpointContent>
@@ -73,13 +57,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "iWallPaper/OpenSource/SVPullToRefresh/UIScrollView+SVInfiniteScrolling.m"
-            timestampString = "436432215.698457"
+            filePath = "iWallPaper/UI/WPPhotosViewController.m"
+            timestampString = "436703428.853357"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "301"
-            endingLineNumber = "301"
-            landmarkName = "-setState:"
+            startingLineNumber = "117"
+            endingLineNumber = "117"
+            landmarkName = "-touchesEnded:withEvent:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -89,29 +73,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "iWallPaper/UI/WPCoverItemView.m"
-            timestampString = "436432965.577015"
+            filePath = "iWallPaper/UI/WPPhotosViewController.m"
+            timestampString = "436703319.37133"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "20"
-            endingLineNumber = "20"
-            landmarkName = "-initWithFrame:"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "iWallPaper/UI/WPCoverCell.m"
-            timestampString = "436433115.616932"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "55"
-            endingLineNumber = "55"
-            landmarkName = "-_layoutViews"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
+            landmarkName = "-touchesEnded:withEvent:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

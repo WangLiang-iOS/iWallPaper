@@ -39,9 +39,22 @@
     [self.httpTransfer downloadRequest:coverUrl onSuccessed:^(NSString *url,NSData *responeData){
         if ([responeData length] > 0) {
             NSArray *covers = [WPParser getAllCovers:responeData];
-            if (completionBlock) {
-                completionBlock(covers,nil,coverType);
+            if ([covers count] > 0) {
+                dispatch_async(dispatch_get_global_queue(0, 0), ^(){
+                    for (WPCoverModel *cover in covers) {
+                        NSData *data = [NSData dataWithContentsOfURL:[NSURL URLWithString:cover.contentUrl]];
+                        if ([data length] > 0) {
+                            cover.paperItems = [WPParser getAllPictures:data];
+                        }
+                    }
+                    dispatch_async(dispatch_get_main_queue(), ^(){
+                        if (completionBlock) {
+                            completionBlock(covers,nil,coverType);
+                        }
+                    });
+                });
             }
+
         }
     }onFailed:^(NSString *url,NSError *error){
         if (completionBlock) {
@@ -50,25 +63,28 @@
     }progress:nil];
 }
 
--(void)getCoverImage:(WPCoverModel*)cover completion:(WPGetCoverImageCompletionBlock)completionBlock{
-    if([cover.coverUrl length] > 0){
-        [self.httpTransfer downloadRequest:cover.coverUrl onSuccessed:^(NSString *url,NSData *responeData){
+-(void)getImageWithUrl:(NSString*)url cover:(WPCoverModel*)cover completion:(WPGetImageCompletionBlock)completionBlock progress:(WPGetImageProgressBlock)progressBlock{
+    if ([url length]) {
+        [self.httpTransfer downloadRequest:url onSuccessed:^(NSString *url,NSData *responeData){
             if ([responeData length] > 0) {
                 UIImage *image = [UIImage imageWithData:responeData];
                 if (image) {
-                    cover.coverImage = image;
-                }
-                if (completionBlock) {
-                    completionBlock(image?image:nil,nil);
+                    if (cover) {
+                        cover.coverImage = image;
+                    }
+                    if (completionBlock) {
+                        completionBlock(image,nil);
+                    }
                 }
             }
         }onFailed:^(NSString *url,NSError *error){
             if (completionBlock) {
                 completionBlock(nil,error);
             }
-        }progress:nil];
+        }progress:progressBlock];
     }
 }
+
 #pragma mark - private methods
 -(NSString*)_coverUrlWithType:(WPCoverType)coverType index:(int)index{
     Device_type d_type = [UIDevice deviceType];

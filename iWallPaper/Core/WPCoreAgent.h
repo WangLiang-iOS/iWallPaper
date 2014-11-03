@@ -17,12 +17,14 @@ typedef enum {
 }WPCoverType;
 
 typedef void (^WPGetCoversCompletionBlock) (NSArray *covers,NSError *error,WPCoverType type);
-typedef void (^WPGetCoverImageCompletionBlock) (UIImage *image,NSError *error);
+typedef void (^WPGetImageCompletionBlock) (UIImage *image,NSError *error);
+typedef void (^WPGetImageProgressBlock) (double progress);
 
 @interface WPCoreAgent : NSObject
 +(WPCoreAgent*)sharedInstance;
 
 -(void)getCoversWithType:(WPCoverType)coverType index:(int)index completion:(WPGetCoversCompletionBlock)completionBlock;
 
--(void)getCoverImage:(WPCoverModel*)cover completion:(WPGetCoverImageCompletionBlock)completionBlock;
+-(void)getImageWithUrl:(NSString*)url cover:(WPCoverModel*)cover completion:(WPGetImageCompletionBlock)completionBlock progress:(WPGetImageProgressBlock)progressBlock;
+
 @end

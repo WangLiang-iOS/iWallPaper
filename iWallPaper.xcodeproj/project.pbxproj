@@ -18,6 +18,8 @@
 		353A67EB1A0237390027A413 /* WPPhotosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 353A67EA1A0237390027A413 /* WPPhotosViewController.m */; };
 		353A67F21A03624B0027A413 /* UIScrollView+SVInfiniteScrolling.m in Sources */ = {isa = PBXBuildFile; fileRef = 353A67EF1A03624B0027A413 /* UIScrollView+SVInfiniteScrolling.m */; };
 		353A67F31A03624B0027A413 /* UIScrollView+SVPullToRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 353A67F11A03624B0027A413 /* UIScrollView+SVPullToRefresh.m */; };
+		353A68741A0383770027A413 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 353A67FA1A0383770027A413 /* MBProgressHUD.m */; };
+		353A68751A0383770027A413 /* README.mdown in Sources */ = {isa = PBXBuildFile; fileRef = 353A67FB1A0383770027A413 /* README.mdown */; };
 		353E19EA19F6379100E04ED4 /* WPMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 353E19E919F6379000E04ED4 /* WPMainViewController.m */; };
 		353E1A0019F63A6D00E04ED4 /* WPBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 353E19FC19F63A6D00E04ED4 /* WPBaseViewController.m */; };
 		353E1A0319F63B7A00E04ED4 /* WPCoverModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 353E1A0219F63B7A00E04ED4 /* WPCoverModel.m */; };
@@ -78,6 +80,9 @@
 		353A67EF1A03624B0027A413 /* UIScrollView+SVInfiniteScrolling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+SVInfiniteScrolling.m"; sourceTree = "<group>"; };
 		353A67F01A03624B0027A413 /* UIScrollView+SVPullToRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+SVPullToRefresh.h"; sourceTree = "<group>"; };
 		353A67F11A03624B0027A413 /* UIScrollView+SVPullToRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+SVPullToRefresh.m"; sourceTree = "<group>"; };
+		353A67F91A0383770027A413 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		353A67FA1A0383770027A413 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		353A67FB1A0383770027A413 /* README.mdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.mdown; sourceTree = "<group>"; };
 		353E19E819F6379000E04ED4 /* WPMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPMainViewController.h; sourceTree = "<group>"; };
 		353E19E919F6379000E04ED4 /* WPMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPMainViewController.m; sourceTree = "<group>"; };
 		353E19EB19F637DA00E04ED4 /* iWallPaper.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iWallPaper.pch; sourceTree = "<group>"; };
@@ -152,8 +157,6 @@
 		352238A719F3CC2E008FEB96 = {
 			isa = PBXGroup;
 			children = (
-				65AF693D19F8C8D40044EAF3 /* libz.1.2.5.dylib */,
-				65AF693B19F8A46A0044EAF3 /* libxml2.2.dylib */,
 				353E19EC19F6385200E04ED4 /* WPGlobalDefine.h */,
 				352238B219F3CC2E008FEB96 /* iWallPaper */,
 				352238CC19F3CC2E008FEB96 /* iWallPaperTests */,
@@ -191,6 +194,8 @@
 		352238B319F3CC2E008FEB96 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				65AF693D19F8C8D40044EAF3 /* libz.1.2.5.dylib */,
+				65AF693B19F8A46A0044EAF3 /* libxml2.2.dylib */,
 				352238B419F3CC2E008FEB96 /* Info.plist */,
 				352238B519F3CC2E008FEB96 /* main.m */,
 				353E19EB19F637DA00E04ED4 /* iWallPaper.pch */,
@@ -225,6 +230,16 @@
 				353A67F11A03624B0027A413 /* UIScrollView+SVPullToRefresh.m */,
 			);
 			path = SVPullToRefresh;
+			sourceTree = "<group>";
+		};
+		353A67F81A0383770027A413 /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				353A67F91A0383770027A413 /* MBProgressHUD.h */,
+				353A67FA1A0383770027A413 /* MBProgressHUD.m */,
+				353A67FB1A0383770027A413 /* README.mdown */,
+			);
+			path = MBProgressHUD;
 			sourceTree = "<group>";
 		};
 		353E19E719F6375E00E04ED4 /* UI */ = {
@@ -298,6 +313,7 @@
 		353E1A0919F6429C00E04ED4 /* OpenSource */ = {
 			isa = PBXGroup;
 			children = (
+				353A67F81A0383770027A413 /* MBProgressHUD */,
 				353A67EC1A03624B0027A413 /* SVPullToRefresh */,
 				65AF692819F8A3C70044EAF3 /* TFHpple */,
 				353E1A2E19F6655F00E04ED4 /* MKNetworkKit */,
@@ -510,8 +526,10 @@
 				353E1A1119F6436F00E04ED4 /* WPPageContainer.m in Sources */,
 				353E1A4319F6655F00E04ED4 /* NSDate+RFC1123.m in Sources */,
 				353A67F31A03624B0027A413 /* UIScrollView+SVPullToRefresh.m in Sources */,
+				353A68741A0383770027A413 /* MBProgressHUD.m in Sources */,
 				353E1A1719F6468D00E04ED4 /* WPPageIndicatorView.m in Sources */,
 				65AF693A19F8A3C70044EAF3 /* XPathQuery.m in Sources */,
+				353A68751A0383770027A413 /* README.mdown in Sources */,
 				353E1A4619F6655F00E04ED4 /* UIAlertView+MKNetworkKitAdditions.m in Sources */,
 				65AF693919F8A3C70044EAF3 /* TFHppleElement.m in Sources */,
 				353E1A4419F6655F00E04ED4 /* NSDictionary+RequestEncoding.m in Sources */,

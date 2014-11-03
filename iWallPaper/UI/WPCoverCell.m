@@ -63,12 +63,13 @@
         if (cover.coverImage) {
             itemView.image = cover.coverImage;
         }else{
-            [[WPCoreAgent sharedInstance] getCoverImage:cover completion:^(UIImage *image,NSError *error){
-                if (image && !error) {
-                    itemView.image = image;
-                    NSLog(@"%f,%f",image.size.width,image.size.height);
-                }
-            }];
+            [[WPCoreAgent sharedInstance] getImageWithUrl:cover.coverUrl cover:cover completion:^(UIImage *image,NSError *error){
+                    if (image && !error) {
+                        itemView.image = image;
+                        NSLog(@"%f,%f",image.size.width,image.size.height);
+                    }
+            }
+            progress:nil];
         }
         itemView.index = i;
         itemView.hidden = NO;

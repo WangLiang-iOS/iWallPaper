@@ -22,6 +22,8 @@
     
     WPMainViewController *mainViewController = [[WPMainViewController alloc] init];
     self.rootNavigation = [[UINavigationController alloc] initWithRootViewController:mainViewController];
+    self.rootNavigation.navigationBar.translucent = YES;
+    self.rootNavigation.navigationBar.barStyle = UIBarStyleBlackTranslucent;
     self.rootNavigation.interactivePopGestureRecognizer.enabled = YES;
     self.window.rootViewController = self.rootNavigation;
     [self.window makeKeyAndVisible];
